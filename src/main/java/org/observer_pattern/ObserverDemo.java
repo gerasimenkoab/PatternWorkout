@@ -6,6 +6,6 @@ public class ObserverDemo {
     }
 
     public void run(){
-        System.out.println("==========Observer is ready.===============");
+        System.out.println("=========Observer is ready.===============");
     }
 }
