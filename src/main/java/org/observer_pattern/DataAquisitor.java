@@ -45,7 +45,7 @@ public class DataAquisitor implements Subject{
                 e.printStackTrace();
             }
 
-            if (count++ == 10) break;
+            if (count++ == 3) break;
         }
     }
     private void changeValues(){

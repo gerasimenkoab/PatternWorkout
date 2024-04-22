@@ -7,7 +7,7 @@ public class WithSyrup extends ToppingDecorator{
     }
 
     public String getDescription(){
-        return this.beverage.getDescription() + "with syrup";
+        return this.beverage.getDescription() + " with syrup";
     }
 
     public double cost(){
