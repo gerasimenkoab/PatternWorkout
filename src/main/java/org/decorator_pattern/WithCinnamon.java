@@ -1,7 +1,6 @@
 package org.decorator_pattern;
 
 public class WithCinnamon extends ToppingDecorator{
-    Beverage beverage;
     public WithCinnamon(Beverage beverage){
         this.beverage = beverage;
     }
