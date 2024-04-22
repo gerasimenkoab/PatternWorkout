@@ -1,4 +1,5 @@
 package org.main;
+import org.decorator_pattern.DecoratorDemo;
 import org.strategy_pattern.StrategyDemo;
 import org.observer_pattern.ObserverDemo;
 
@@ -12,6 +13,8 @@ public class Main {
         demo1.run();
         ObserverDemo demo2 = new ObserverDemo();
         demo2.run();
+        DecoratorDemo demo3 = new DecoratorDemo();
+        demo3.run();
 
     }
 }
