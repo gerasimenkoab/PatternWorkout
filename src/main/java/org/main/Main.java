@@ -2,6 +2,7 @@ package org.main;
 import org.decorator_pattern.DecoratorDemo;
 import org.strategy_pattern.StrategyDemo;
 import org.observer_pattern.ObserverDemo;
+import org.factory_pattern.FactoryDemo;
 
 public class Main {
     /*
@@ -15,6 +16,8 @@ public class Main {
         demo2.run();
         DecoratorDemo demo3 = new DecoratorDemo();
         demo3.run();
+        FactoryDemo demo4 = new FactoryDemo();
+        demo4.run();
 
     }
 }
