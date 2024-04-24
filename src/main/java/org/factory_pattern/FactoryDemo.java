@@ -1,6 +1,8 @@
 package org.factory_pattern;
 
-public class FactoryDemo {
+import org.main.Demo;
+
+public class FactoryDemo  extends Demo {
     public void run(){
         System.out.println("=============Factory is ready.================");
         DocumentProcessor DP1 = new EngDocumentProcessor();

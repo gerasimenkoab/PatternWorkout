@@ -1,6 +1,8 @@
 package org.strategy_pattern;
 
-public class StrategyDemo {
+import org.main.Demo;
+
+public class StrategyDemo  extends Demo {
     public StrategyDemo()
     {
         System.out.println("============Strategy pattern demo.==============");

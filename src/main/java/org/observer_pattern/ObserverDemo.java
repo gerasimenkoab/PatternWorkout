@@ -1,9 +1,11 @@
 package org.observer_pattern;
 
+import org.main.Demo;
+
 import javax.xml.crypto.Data;
 
 // TODO implement Observer example
-public class ObserverDemo {
+public class ObserverDemo  extends Demo {
     public ObserverDemo(){
     }
 

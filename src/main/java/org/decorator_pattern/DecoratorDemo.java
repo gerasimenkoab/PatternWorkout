@@ -1,6 +1,8 @@
 package org.decorator_pattern;
 
-public class DecoratorDemo {
+import org.main.Demo;
+
+public class DecoratorDemo  extends Demo {
     public DecoratorDemo(){}
     public void run(){
         System.out.println("============Decorator is ready.==============");
