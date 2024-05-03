@@ -8,11 +8,11 @@ import org.factory_pattern.FactoryDemo;
 import org.observer_pattern.ObserverDemo;
 import org.singleton.SingletonDemo;
 import org.strategy_pattern.StrategyDemo;
-import org.command.CommandDemo;
+import org.adapter.AdapterDemo;
 
 public class Factory {
     ArrayList<String> implemented = new ArrayList<>(Arrays.asList("strategy","observer",
-            "factory","abstract_factory","singleton","command"));
+            "factory","abstract_factory","singleton","command","adapter"));
     public Demo create(String type){
         switch(type){
             case "strategy" :
@@ -29,6 +29,8 @@ public class Factory {
                 return new SingletonDemo();
             case"command":
                 return new CommandDemo();
+            case"adapter":
+                return new AdapterDemo();
             default:
                 return null;
         }
