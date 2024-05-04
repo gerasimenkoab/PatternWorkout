@@ -9,7 +9,7 @@ public class Main {
         ArrayList<String> demoType;
         Demo demo;
         System.out.println("Lets start testing patterns");
-        Factory demoFactory = new Factory();
+        DemoFactory demoFactory = new DemoFactory();
         demoType = demoFactory.getImplemented();
         for (String type: demoType ) {
             demo = demoFactory.create(type);

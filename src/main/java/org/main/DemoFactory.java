@@ -12,7 +12,7 @@ import org.singleton.SingletonDemo;
 import org.strategy_pattern.StrategyDemo;
 import org.adapter.AdapterDemo;
 
-public class Factory {
+public class DemoFactory {
     ArrayList<String> implemented = new ArrayList<>(Arrays.asList("strategy","observer","decorator",
             "factory","abstract_factory","singleton","command","adapter","template_method"));
     public Demo create(String type){
