@@ -11,13 +11,15 @@ public class AdapterDemo extends Demo {
     public void run() {
         System.out.printf("%s\n", this.helloMessage);
         Duck enDuck = new EnglishDuck();
-        RusDuck ruDuck = new RusDuck();
-        Duck duckFromAdapter = new RusDuckAdapter(ruDuck);
+        Owl nightOwl = new NightOwl();
+        Duck duckFromAdapter = new DuckAdapter(nightOwl);
         System.out.printf("%s\n","Duck actions:");
-        enDuck.quak();
-        enDuck.fly();
+        clientRunsDuck(enDuck);
         System.out.printf("%s \n", "Duck from adapter actions:");
-        duckFromAdapter.quak();
-        duckFromAdapter.fly();
+        clientRunsDuck(duckFromAdapter);
+    }
+    private void clientRunsDuck(Duck duck){
+        duck.quak();
+        duck.fly();
     }
 }

@@ -1,6 +1,8 @@
 package org.main;
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import org.template_method.TemplateMethodDemo;
 import org.abstract_factory.AbstractFactoryDemo;
 import org.command.CommandDemo;
 import org.decorator_pattern.DecoratorDemo;
@@ -11,8 +13,8 @@ import org.strategy_pattern.StrategyDemo;
 import org.adapter.AdapterDemo;
 
 public class Factory {
-    ArrayList<String> implemented = new ArrayList<>(Arrays.asList("strategy","observer",
-            "factory","abstract_factory","singleton","command","adapter"));
+    ArrayList<String> implemented = new ArrayList<>(Arrays.asList("strategy","observer","decorator",
+            "factory","abstract_factory","singleton","command","adapter","template_method"));
     public Demo create(String type){
         switch(type){
             case "strategy" :
@@ -31,6 +33,8 @@ public class Factory {
                 return new CommandDemo();
             case"adapter":
                 return new AdapterDemo();
+            case"template_method":
+                return new TemplateMethodDemo();
             default:
                 return null;
         }
